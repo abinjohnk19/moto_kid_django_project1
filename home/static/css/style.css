@@ -1,0 +1,109 @@
+/* =========================
+   GLOBAL THEME COLOR
+========================= */
+
+:root {
+    --theme-dark: #102228;
+    --theme-dark-hover: #16333b;
+    --theme-accent: #4fd1c5;
+}
+
+/* =========================
+   NAVBAR COLOR OVERRIDE
+========================= */
+
+.navbar {
+    background-color: var(--theme-dark) !important;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
+}
+
+/* Navbar brand text */
+.navbar h3 {
+    color: #e6f4f6 !important;
+    letter-spacing: 1px;
+}
+
+/* Nav items */
+.navbar .nav-item {
+    border-radius: 10px;
+    transition:
+        background-color 0.25s ease,
+        transform 0.15s ease,
+        box-shadow 0.15s ease;
+}
+
+/* Nav links */
+.navbar .nav-link {
+    color: #dceff2 !important;
+    font-weight: 600;
+}
+
+/* Hover effect */
+.navbar .nav-item:hover {
+    background-color: var(--theme-dark-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+}
+
+.navbar .nav-item:hover .nav-link {
+    color: #ffffff !important;
+}
+
+/* Underline animation */
+.navbar .nav-item::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 4px;
+    width: 0;
+    height: 2px;
+    background-color: var(--theme-accent);
+    transition: width 0.25s ease;
+    transform: translateX(-50%);
+}
+
+.navbar .nav-item:hover::after {
+    width: 60%;
+}
+
+/* Active nav item */
+.navbar .nav-item.active {
+    background-color: rgba(79, 209, 197, 0.2);
+}
+
+/* =========================
+   FOOTER COLOR OVERRIDE
+========================= */
+
+footer {
+    background-color: var(--theme-dark) !important;
+    color: #dceff2;
+    box-shadow: 0 -6px 20px rgba(0, 0, 0, 0.35);
+    font-size: 14px;
+    letter-spacing: 0.4px;
+}
+
+/* Footer text center fix */
+footer .container {
+    color: #e6f4f6;
+}
+
+
+body {
+    padding-bottom: 60px;
+
+}
+
+/* Footer height + color (reinforced) */
+footer {
+    height: 40px;
+    line-height: 60px;
+    background-color: #102228 !important;
+    color: #e6f4f6 !important;
+    box-shadow: 0 -6px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Footer text alignment */
+footer .container {
+    line-height: normal;
+}

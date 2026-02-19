@@ -1,0 +1,90 @@
+/* =========================
+   404 ERROR PAGE
+========================= */
+
+.error-section {
+    min-height: 90vh;
+    background: linear-gradient(180deg, #0f1f25, #13272E, #0f1f25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.error-container {
+    max-width: 600px;
+}
+
+.error-code {
+    font-size: 120px;
+    font-weight: 900;
+    color: #4fd1c5;
+    margin-bottom: 10px;
+    letter-spacing: 4px;
+}
+
+.error-title {
+    font-size: 32px;
+    font-weight: 800;
+    color: #e6f4f6;
+    margin-bottom: 15px;
+}
+
+.error-text {
+    font-size: 16px;
+    color: #b8d6db;
+    margin-bottom: 35px;
+    line-height: 1.6;
+}
+
+/* Buttons */
+.error-actions {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.btn-error-primary,
+.btn-error-secondary {
+    text-decoration: none;
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+/* Primary */
+.btn-error-primary {
+    background: linear-gradient(135deg, #4fd1c5, #22c1b6);
+    color: #102228;
+}
+
+.btn-error-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.45);
+}
+
+/* Secondary */
+.btn-error-secondary {
+    background: transparent;
+    color: #e6f4f6;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.btn-error-secondary:hover {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .error-code {
+        font-size: 80px;
+    }
+
+    .error-title {
+        font-size: 26px;
+    }
+}

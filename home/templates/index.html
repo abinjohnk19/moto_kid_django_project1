@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Home
+{% endblock %}
+
+{% block content %}
+
+<section class="home-hero">
+    <div class="home-hero-content">
+        <h1>Smart Vehicle Service, Simplified</h1>
+        <p>
+            Book trusted vehicle services online with expert mechanics.
+            Fast, reliable, and hassle-free.
+        </p>
+
+        <div class="home-buttons">
+            <a href="{% url 'booking' %}" class="btn-primary-home">Book Service</a>
+            <a href="{% url 'about' %}" class="btn-secondary-home">Learn More</a>
+        </div>
+    </div>
+</section>
+
+<section class="home-services">
+    <h2>Our Services</h2>
+
+    <div class="services-grid">
+        <div class="service-card">Mechanical Service</div>
+        <div class="service-card">General Service</div>
+        <div class="service-card">Electrical Service</div>
+        <div class="service-card">Washing</div>
+    </div>
+</section>
+
+<section class="home-cta">
+    <h2>Need Help With Your Vehicle?</h2>
+    <p>Our experts are ready to assist you.</p>
+    <a href="{% url 'contact' %}" class="btn-primary-home">Contact Us</a>
+</section>
+
+{% endblock %}

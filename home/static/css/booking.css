@@ -1,0 +1,78 @@
+/* =========================
+   BOOKING PAGE THEME
+========================= */
+
+/* Page background */
+body {
+    background: linear-gradient(180deg, #0f1f25, #13272E, #0f1f25);
+}
+
+/* Page heading */
+h1.text-center {
+    color: #e6f4f6;
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin-top: 30px;
+}
+
+/* Booking form container */
+.container.w-50.bg-info {
+    background: linear-gradient(135deg, #1b3a44, #13272E) !important;
+    border-radius: 16px;
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.45);
+}
+
+/* Form padding */
+.container.w-50 form {
+    padding: 20px;
+}
+
+/* Crispy inputs */
+.container.w-50 input,
+.container.w-50 select,
+.container.w-50 textarea {
+    border-radius: 8px !important;
+    border: 1px solid #3b5b65;
+    padding: 10px;
+    font-size: 15px;
+}
+
+/* Input focus */
+.container.w-50 input:focus,
+.container.w-50 select:focus,
+.container.w-50 textarea:focus {
+    outline: none;
+    border-color: #4fd1c5;
+    box-shadow: 0 0 0 2px rgba(79, 209, 197, 0.35);
+}
+
+/* Labels */
+.container.w-50 label {
+    color: #e6f4f6;
+    font-weight: 600;
+}
+
+/* Submit button */
+.container.w-50 .btn-primary {
+    background: linear-gradient(135deg, #102228, #1b3a44);
+    border: none;
+    padding: 10px 36px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+/* Button hover */
+.container.w-50 .btn-primary:hover {
+    background: linear-gradient(135deg, #1b3a44, #2e5966);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.4);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .container.w-50 {
+        width: 90% !important;
+    }
+}
