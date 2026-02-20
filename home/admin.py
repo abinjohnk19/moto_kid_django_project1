@@ -11,3 +11,4 @@ admin.site.register(Mechanic)
 class BookingAdmin(admin.ModelAdmin):
     list_display=('id','c_name','c_phone','c_email','dep_name','booking_date','booked_on')
 admin.site.register(Booking,BookingAdmin)
+
